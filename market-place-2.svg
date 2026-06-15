@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+<rect width="1200" height="800" fill="#eef0e6"/>
+<g fill="none" stroke="#16191d" stroke-width="14" stroke-linejoin="round">
+<rect x="420" y="380" width="360" height="240" fill="#ffffff"/>
+<path d="M390 390 L600 240 L810 390" fill="#d7301f" stroke="#16191d"/>
+<rect x="560" y="480" width="80" height="140" fill="#1c2e4a"/>
+<rect x="460" y="430" width="70" height="70" fill="#ffc72c"/>
+<rect x="670" y="430" width="70" height="70" fill="#ffc72c"/>
+</g>
+<text x="600" y="700" font-family="Arial" font-size="40" font-weight="bold" fill="#16191d" text-anchor="middle">Example photo 2 of 4 - kitchen</text>
+</svg>
