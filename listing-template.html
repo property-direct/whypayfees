@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- ============================================================
+LISTING TEMPLATE — Claude uses this to build each new listing page.
+Replace every {{TOKEN}}. For free listings, delete the <div class="thumbs">
+block. For Premium with video, un-comment the video-wrap block and add
+the YouTube ID. Real listings: DELETE the robots noindex line and the
+example notice, and ADD the page to sitemap.xml.
+============================================================ -->
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{BEDS}}-Bed {{TYPE}}, {{ROAD}}, Melbourne — £{{PRICE_FORMATTED}} | WhyPayFees</title>
+<meta name="description" content="{{BEDS}}-bed {{TYPE_LOWER}} for sale by owner on {{ROAD}}, Melbourne, Derbyshire. £{{PRICE_FORMATTED}}, no estate agent — call the seller directly.">
+<link rel="canonical" href="https://whypayfees.co.uk/listings/{{SLUG}}.html">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateListing",
+  "name": "{{TITLE}}",
+  "url": "https://whypayfees.co.uk/listings/{{SLUG}}.html",
+  "image": "https://whypayfees.co.uk/images/listings/{{SLUG}}-1.jpg",
+  "description": "{{BLURB}}",
+  "offers": {
+    "@type": "Offer",
+    "price": "{{PRICE_NUMBER}}",
+    "priceCurrency": "GBP",
+    "availability": "https://schema.org/InStock"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ROAD}}",
+    "addressLocality": "Melbourne",
+    "addressRegion": "Derbyshire",
+    "postalCode": "DE73",
+    "addressCountry": "GB"
+  }
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="../index.html" aria-label="WhyPayFees home">
+      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="6" width="48" height="34" rx="4" fill="#fff" stroke="#16191d" stroke-width="4"/><rect x="8" y="6" width="48" height="16" rx="4" fill="#d7301f" stroke="#16191d" stroke-width="4"/><rect x="29" y="40" width="6" height="20" fill="#1c2e4a"/><rect x="16" y="27" width="32" height="6" fill="#ffc72c"/></svg>
+      <span>Why<em>Pay</em>Fees</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="../index.html#homes">Homes for sale</a>
+      <a href="../sell.html">Sell your home</a>
+      <a href="../guide.html">Selling guide</a>
+      <a href="../advertise.html">Local services</a>
+    </nav>
+    <a class="btn btn-red small nav-cta" href="../sell.html">List your home — free</a>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="detail" style="padding-top:50px">
+    <div>
+      <div class="gallery-main">
+        <img id="galleryMain" src="../images/listings/{{SLUG}}-1.jpg" alt="{{TITLE}}">
+      </div>
+
+      <!-- DELETE this thumbs block for free (single-photo) listings.
+           For Boost/Premium, repeat one <button> per photo. -->
+      <div class="thumbs">
+        <button class="on" data-src="../images/listings/{{SLUG}}-1.jpg" aria-label="Photo 1"><img src="../images/listings/{{SLUG}}-1.jpg" alt=""></button>
+        <button data-src="../images/listings/{{SLUG}}-2.jpg" aria-label="Photo 2"><img src="../images/listings/{{SLUG}}-2.jpg" alt=""></button>
+      </div>
+
+      <!-- PREMIUM VIDEO: un-comment and replace YOUTUBE_ID
+      <div class="video-wrap">
+        <iframe src="https://www.youtube-nocookie.com/embed/YOUTUBE_ID" title="Video tour of {{TITLE}}" allowfullscreen loading="lazy"></iframe>
+      </div>
+      -->
+
+      <div class="desc">
+        <span class="eyebrow">For sale by owner</span>
+        <h1 style="font-size:clamp(1.7rem,3.5vw,2.3rem)">{{TITLE}}</h1>
+        <p class="lede">Melbourne, Derbyshire DE73</p>
+        <h2>The seller says</h2>
+        <p>{{DESCRIPTION_PARAGRAPH_1}}</p>
+        <p>{{DESCRIPTION_PARAGRAPH_2}}</p>
+        <h2>The facts</h2>
+        <p>{{FACTS_PARAGRAPH — beds, baths, receptions, tenure, heating, EPC, council tax band, chain position}}</p>
+      </div>
+    </div>
+
+    <aside class="panel">
+      <span class="price-tag">£{{PRICE_FORMATTED}}</span>
+      <h2 style="font-size:1.1rem">{{TITLE_SHORT}}</h2>
+      <ul class="facts">
+        <li><span>Status</span><b>For sale</b></li>
+        <li><span>Bedrooms</span><b>{{BEDS}}</b></li>
+        <li><span>Bathrooms</span><b>{{BATHS}}</b></li>
+        <li><span>Type</span><b>{{TYPE}}</b></li>
+        <li><span>Tenure</span><b>{{TENURE}}</b></li>
+        <li><span>EPC</span><b>{{EPC}}</b></li>
+      </ul>
+      <a class="btn btn-red" href="tel:{{PHONE_NOSPACES}}">Call {{SELLER_NAME}} — {{PHONE_DISPLAY}}</a>
+      <a class="btn btn-navy" href="sms:{{PHONE_NOSPACES}}">Text {{SELLER_NAME}}</a>
+      <p class="deal-direct">You deal directly with the owner. WhyPayFees never gets involved in viewings, offers or the sale itself — see <a href="../guide.html">how private buying works</a>.</p>
+    </aside>
+  </div>
+
+  <p style="margin:34px 0 50px"><a href="../index.html#homes">← Back to all Melbourne homes</a></p>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h3>WhyPayFees</h3>
+      <p style="font-size:.93rem;max-width:32ch">The commission-free way to sell your home in Melbourne, Derbyshire. By owners, for owners.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="../index.html#homes">Homes for sale</a></li>
+        <li><a href="../sell.html">Sell your home</a></li>
+        <li><a href="../guide.html">Private selling guide</a></li>
+        <li><a href="../advertise.html">Advertise your business</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li>Call or text: <a href="tel:07000000000">07000 000000</a></li>
+        <li>WhatsApp: <a href="https://wa.me/447000000000">message us</a></li>
+        <li>Email: <a href="mailto:hello@whypayfees.co.uk">hello@whypayfees.co.uk</a></li>
+        <li><a href="../legal.html">Terms &amp; privacy</a></li>
+      </ul>
+    </div>
+    <p class="foot-note">© <span id="year">2026</span> WhyPayFees. We are an advertising platform for private sellers, not an estate agent — we never negotiate or act on a seller's behalf. Buyers and sellers deal with each other directly.</p>
+  </div>
+</footer>
+
+<script src="../js/site.js"></script>
+</body>
+</html>
