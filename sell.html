@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>List Your Home Free — Sell Your House Privately in Melbourne | WhyPayFees</title>
+<meta name="description" content="List your Melbourne, Derbyshire home for free with no estate agent and no commission. Upgrades from £29 for extra photos and video tours. Live within 24 hours.">
+<link rel="canonical" href="https://whypayfees.co.uk/sell.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html" aria-label="WhyPayFees home">
+      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="6" width="48" height="34" rx="4" fill="#fff" stroke="#16191d" stroke-width="4"/><rect x="8" y="6" width="48" height="16" rx="4" fill="#d7301f" stroke="#16191d" stroke-width="4"/><rect x="29" y="40" width="6" height="20" fill="#1c2e4a"/><rect x="16" y="27" width="32" height="6" fill="#ffc72c"/></svg>
+      <span>Why<em>Pay</em>Fees</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html#homes">Homes for sale</a>
+      <a href="sell.html" class="active">Sell your home</a>
+      <a href="guide.html">Selling guide</a>
+      <a href="advertise.html">Local services</a>
+    </nav>
+    <a class="btn btn-red small nav-cta" href="#send">List your home — free</a>
+  </div>
+</header>
+
+<main>
+
+<section class="tight" style="padding-top:64px">
+  <div class="wrap">
+    <span class="eyebrow">Sell your home</span>
+    <h1>Three ways to list. None of them involves commission.</h1>
+    <p class="lede">Pick a listing, send us your details, and your home is live on Melbourne's own property site within 24 hours. Prices are one-off — your listing stays up until your home is sold.</p>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="tight">
+  <div class="wrap">
+    <div class="tiers">
+      <div class="tier">
+        <h3>Standard</h3>
+        <p class="amount">£0 <small>free, forever</small></p>
+        <ul>
+          <li>1 photo of your home</li>
+          <li>Full written description</li>
+          <li>Your phone number on the advert</li>
+          <li>Price, beds, tenure &amp; EPC shown</li>
+          <li>Live until sold</li>
+          <li class="no">Photo gallery</li>
+          <li class="no">Video tour</li>
+        </ul>
+        <a class="btn btn-navy" href="#send">List free</a>
+      </div>
+      <div class="tier featured">
+        <span class="flag">Most popular</span>
+        <h3>Boost</h3>
+        <p class="amount">£29 <small>one-off</small></p>
+        <ul>
+          <li>Everything in Standard</li>
+          <li>Up to 10 photos</li>
+          <li>Gallery on your listing page</li>
+          <li>"Premium" badge in search</li>
+          <li class="no">Video tour</li>
+        </ul>
+        <!-- TODO: when your Stripe Payment Link is ready, change this href to it -->
+        <a class="btn btn-red" href="#send">Choose Boost</a>
+      </div>
+      <div class="tier">
+        <h3>Premium</h3>
+        <p class="amount">£49 <small>one-off</small></p>
+        <ul>
+          <li>Everything in Boost</li>
+          <li>Video tour embedded on your page</li>
+          <li>Featured at the top of the homepage</li>
+          <li>Shared on our local social pages</li>
+        </ul>
+        <!-- TODO: when your Stripe Payment Link is ready, change this href to it -->
+        <a class="btn btn-navy" href="#send">Choose Premium</a>
+      </div>
+    </div>
+    <p style="margin-top:18px;color:var(--slate);font-size:.92rem">Pay by bank transfer or card link after we've confirmed your listing — nothing is owed until you've seen your advert.</p>
+  </div>
+</section>
+
+<!-- ============ CALCULATOR ============ -->
+<section class="tight">
+  <div class="wrap">
+    <div class="calc">
+      <div>
+        <span class="eyebrow" style="color:var(--sun)">Reality check</span>
+        <h2>See what you'd save</h2>
+        <p>High-street agents in this area typically charge 1.2–1.8% of the sale price, plus VAT, payable on completion. Here's that number on your home.</p>
+      </div>
+      <div class="calc-io">
+        <label for="calcPrice">Your asking price (£)</label>
+        <input id="calcPrice" type="text" inputmode="numeric" value="300000">
+        <div class="calc-results">
+          <div><span>Agent at 1.2% + VAT</span><b id="calcLow">£0</b></div>
+          <div><span>Agent at 1.8% + VAT</span><b id="calcHigh">£0</b></div>
+          <div><span>WhyPayFees commission</span><b id="calcOurs">£0</b></div>
+          <div><span>You keep</span><b id="calcSave">£0</b></div>
+        </div>
+        <p class="calc-note">Indicative figures based on typical sole-agency rates; your quote may differ.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT TO SEND ============ -->
+<section class="alt" id="send">
+  <div class="wrap">
+    <span class="eyebrow">Ten minutes, one message</span>
+    <h2>Send us these eight things</h2>
+    <p class="lede">Copy the list below into a WhatsApp or email, fill in your answers, attach your photo(s), and you're done. We'll reply to confirm before anything goes live.</p>
+
+    <div class="check-card">
+      <ul>
+        <li><strong>1. Property address</strong> — house number, street, postcode (we only publish the street name, never the full number unless you want us to)</li>
+        <li><strong>2. Asking price</strong> — and whether it's fixed, "offers over" or "offers around"</li>
+        <li><strong>3. The basics</strong> — bedrooms, bathrooms, property type, freehold or leasehold</li>
+        <li><strong>4. A description</strong> — 100–200 words in your own voice; what you'd tell a friend about the house. We'll tidy it up for you</li>
+        <li><strong>5. Your EPC rating</strong> — legally required before marketing. No EPC yet? It costs £60–£90 and takes a week; see our <a href="guide.html">guide</a> or the assessor on our services page</li>
+        <li><strong>6. Photos</strong> — 1 free, up to 10 on Boost. Landscape (sideways) photos, taken in daylight, work best</li>
+        <li><strong>7. Your first name and mobile number</strong> — this is what buyers will see and call</li>
+        <li><strong>8. Proof you own it</strong> — a photo of a recent council tax bill or mortgage statement. Never published; it just keeps the site honest</li>
+      </ul>
+    </div>
+
+    <div class="btn-row">
+      <!-- TODO: replace 447000000000 with your own number in international format -->
+      <a class="btn btn-red" href="https://wa.me/447000000000?text=Hi%2C%20I%27d%20like%20to%20list%20my%20home%20on%20WhyPayFees.%0A1.%20Address%3A%20%0A2.%20Asking%20price%3A%20%0A3.%20Beds%2Fbaths%2Ftype%2Ftenure%3A%20%0A4.%20Description%3A%20%0A5.%20EPC%20rating%3A%20%0A6.%20Photos%3A%20attached%0A7.%20Name%20%26%20mobile%3A%20%0A8.%20Proof%20of%20ownership%3A%20attached">WhatsApp your listing</a>
+      <a class="btn btn-ghost" href="mailto:hello@whypayfees.co.uk?subject=New%20listing%20on%20WhyPayFees&body=1.%20Address%3A%0A2.%20Asking%20price%3A%0A3.%20Beds%2Fbaths%2Ftype%2Ftenure%3A%0A4.%20Description%3A%0A5.%20EPC%20rating%3A%0A6.%20Photos%3A%20attached%0A7.%20Name%20%26%20mobile%3A%0A8.%20Proof%20of%20ownership%3A%20attached">Email your listing</a>
+    </div>
+
+    <div class="notice">
+      <strong>House rules.</strong> You must be the legal owner (or have the owner's written permission). Listings must be accurate — price, tenure and anything a buyer would reasonably need to know. We may decline or remove listings that don't meet these standards. Full details in our <a href="legal.html">terms</a>.
+    </div>
+  </div>
+</section>
+
+<!-- ============ AFTER YOU LIST ============ -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">What happens next</span>
+    <h2>You sell it. We cheer you on.</h2>
+    <div class="steps" style="grid-template-columns:repeat(3,1fr)">
+      <div class="step"><b class="num">1</b><h3>Buyers ring you</h3><p>Take their name and number, ask if they're proceedable (sold? cash? mortgage agreed?), and book a viewing time that suits you.</p></div>
+      <div class="step"><b class="num">2</b><h3>Offers come in</h3><p>Negotiate directly — you know your bottom line. Once you accept, both sides instruct solicitors and it proceeds like any normal sale.</p></div>
+      <div class="step"><b class="num">3</b><h3>Tell us it's sold</h3><p>We'll slap a SOLD strip across your listing (very satisfying) and take it down after completion. Read the full <a href="guide.html">selling guide</a> first.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h3>WhyPayFees</h3>
+      <p style="font-size:.93rem;max-width:32ch">The commission-free way to sell your home in Melbourne, Derbyshire. By owners, for owners.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="index.html#homes">Homes for sale</a></li>
+        <li><a href="sell.html">Sell your home</a></li>
+        <li><a href="guide.html">Private selling guide</a></li>
+        <li><a href="advertise.html">Advertise your business</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li>Call or text: <a href="tel:07000000000">07000 000000</a></li>
+        <li>WhatsApp: <a href="https://wa.me/447000000000">message us</a></li>
+        <li>Email: <a href="mailto:hello@whypayfees.co.uk">hello@whypayfees.co.uk</a></li>
+        <li><a href="legal.html">Terms &amp; privacy</a></li>
+      </ul>
+    </div>
+    <p class="foot-note">© <span id="year">2026</span> WhyPayFees. We are an advertising platform for private sellers, not an estate agent — we never negotiate or act on a seller's behalf. Buyers and sellers deal with each other directly.</p>
+  </div>
+</footer>
+
+<script src="js/listings.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
