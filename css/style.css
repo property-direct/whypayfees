@@ -137,7 +137,7 @@ header{
 }
 .strip .wrap{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;
   font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:700;font-size:.92rem;letter-spacing:.05em}
-.strip span::before{content:"â– ";color:var(--sun);margin-right:9px;font-size:.7rem;vertical-align:2px}
+.strip span::before{content:"\25A0";color:var(--sun);margin-right:9px;font-size:.7rem;vertical-align:2px}
 
 /* ---------- Steps ---------- */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:34px}
