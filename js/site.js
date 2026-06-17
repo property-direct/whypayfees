@@ -25,7 +25,7 @@
       '<span class="price-tag">' + gbp(l.price) + "</span>" +
       "<h3>" + l.title + "</h3>" +
       '<p class="card-meta">' + l.beds + " bed · " + l.propertyType + " · " + l.road + "</p>" +
-      '<p class="card-cta">Call ' + (l.sellerName || "the seller") + " direct →</p>" +
+      '<p class="card-cta">Message about this home →</p>' +
       "</div></a>"
     );
   }
