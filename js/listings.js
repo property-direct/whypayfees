@@ -18,7 +18,7 @@ window.LISTINGS = [
     epc: "D",
     tier: "Free",                        // Free | Boost | Premium
     status: "For sale",                  // For sale | SSTC | Sold
-    photos: ["images/listings/penn-lane-1.svg"],
+    photos: ["penn-lane.jpg"],
     video: null,                         // YouTube video ID for Premium, e.g. "dQw4w9WgXcQ"
     sellerName: "Sarah",
     phone: "07700 900111",
@@ -39,10 +39,10 @@ window.LISTINGS = [
     tier: "Premium",
     status: "For sale",
     photos: [
-      "images/listings/market-place-1.svg",
-      "images/listings/market-place-2.svg",
-      "images/listings/market-place-3.svg",
-      "images/listings/market-place-4.svg"
+      "market-place.jpg",
+      "market-place.jpg",
+      "market-place.jpg",
+      "market-place.jpg"
     ],
     video: null,
     sellerName: "James",
