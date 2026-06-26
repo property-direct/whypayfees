@@ -23,7 +23,7 @@ window.LISTINGS = [
     sellerName: "Sarah",
     phone: "07700 900111",
     blurb: "Characterful two-bed terrace a short walk from Melbourne Pool, with original fireplaces and a south-facing courtyard garden.",
-    page: "listings/example-penn-lane-terrace.html"
+    page: "penn-lane-terrace.html"
   },
   {
     id: "example-market-place-townhouse",
@@ -48,6 +48,6 @@ window.LISTINGS = [
     sellerName: "James",
     phone: "07700 900222",
     blurb: "Handsome Georgian townhouse in the heart of Melbourne, with sash windows, a walled garden and views towards the church.",
-    page: "listings/example-market-place-townhouse.html"
+    page: "market-place-townhouse.html"
   }
 ];
